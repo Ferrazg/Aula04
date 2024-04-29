@@ -1,0 +1,201 @@
+:root{
+    --textPage:Inter;
+    --colorText:#ffffff;
+    --colorBackFont:#000000;
+    --colorFooterAndBackBotton: #0C70F2;
+    --backGroundMenu:#303030;
+}
+body{
+    margin: 0;
+    background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 29.91%, rgba(12, 112, 242, 0) 35.84%) #303030;
+    background-repeat: no-repeat;
+}
+    
+.conteiner{
+    display: grid;
+    grid-auto-flow:column ;
+    grid-auto-columns: 1fr;
+
+}
+.cabecalho{
+    padding-left: 25px;
+    display: grid;
+    grid-auto-flow:column ;
+    grid-template-columns: 15% 25% 30% ;
+    align-items: center;
+    margin-left: 96px;
+    background: var(--backGroundMenu) ;
+    height: 60px;
+    width: 95%;    
+   
+}
+#cabecalho{
+    background: var(--backGroundMenu) ;
+    margin: 0;
+    grid-template-columns: 70% 30%;
+    height: 60px;
+    width: 100%;
+    border-bottom: 2px solid #BABABA;
+  
+}
+#cabecalho a:hover{
+    color: #cecece;
+}
+.textCabrcalho{
+    width: 80%;
+    color:var(--colorText);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--textPage);
+    line-height: 30.02px;
+    height: 20px;
+    text-decoration: none;
+    
+}
+.cabecalhoBotton{
+    text-align: right;   
+    width: 80%;
+    margin-right: 33px;
+    margin-top: 20px;
+    height:40px ; 
+    padding: 0;
+}
+
+#Buttons{
+    background-color: var(--colorFooterAndBackBotton);
+    margin-bottom: 15px;
+    border: var(--colorFooterAndBackBotton);
+    width: 75px;
+    height: 29px;
+    box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
+}
+#Buttons a {
+    font-size: 20x;
+    font-weight: 600;
+    font-family: var(--textPage);
+    line-height: 24px;
+    color: var(--colorText); 
+    text-decoration: none;
+}
+#reec{
+    width:100%
+}
+#cabecalhoInfo{
+    text-align: center;
+    color: var(--colorText);
+}
+#cabecalhoInfo h1{
+    font-family: var(--textPage);
+    font-size: 60px;
+    font-weight: 800;
+    margin-top: 95px;
+}
+#cabecalhoInfo h2{
+    font-family: var(--textPage);
+    font-weight: 500;
+    font-size: 30px;
+}
+.textD{
+    border: solid #0000;
+    border-radius: 8px;
+    background-color: #000000;
+}   
+
+
+.formsPag{
+  margin-left: 405px;
+   
+}
+.infoForms h2{
+    font-family: var(--textPage);   
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: var(--colorText);
+}
+
+
+.labelForms {
+    font-size: 22px;
+    font-family: var(--textPage);
+    font-weight: 600;
+    width: 40%;
+    margin-bottom: 0;
+}
+.input{
+    border: 1px solid ;
+    border-radius: 7px ;
+    width: 40%;
+    height: 26px;
+    padding-left: 10px;
+}
+.infoForms h3{
+    display: inline-block;
+    margin-right:15px;
+    margin-bottom: 2px;
+    font-weight: 400;
+    font-family: var(--textPage);
+    font-size: 15px;
+    color: var(--colorText);
+    
+}
+.formsPag button{
+    margin-top: 5%;
+    width: 41%;
+    height: 26px;
+    border: 1px solid #0C70F2;
+    border-radius: 7px ;
+    font-family: var(--textPage);
+    font-weight: 600;
+    font-size: 15px;
+    background-color: var(--colorFooterAndBackBotton);
+    color: var(--colorText);
+
+}
+.formsPag{
+    margin-top: 80px;
+}
+#cursosDnc{
+    color: var(--colorText);
+    background: var(--colorFooterAndBackBotton);
+    margin-top: 5%;
+    margin-left: 0;
+    text-align: center;
+}
+#cursosDnc ul{
+    width: 60%;
+}
+#cursosDnc a{
+    text-decoration: none;
+    color: var(--colorText);
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--textPage);
+}
+#historiaDnc ul{
+    padding: 0;
+    margin-top: 10%;
+    font-family: var(--textPage);
+}
+#infosDnc h3{
+    margin-top: 30%;
+    font-family: var(--textPage);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+#Footer h2{
+    text-align: center;
+    font-family: var(--textPage);
+    color: var(--colorText);
+    font-weight: 400;
+    font-size: 18px;
+}
+#Footer{
+    background-color: var(--colorFooterAndBackBotton);
+    margin: 0;
+    height: 25px;
+}
+#back{
+    background-color: var(--colorFooterAndBackBotton);
+}
