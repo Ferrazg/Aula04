@@ -6,11 +6,11 @@
     --backGroundMenu:#303030;
 }
 body{
+    width: 100%;
     margin: 0;
     background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 29.91%, rgba(12, 112, 242, 0) 35.84%) #303030;
     background-repeat: no-repeat;
-}
-    
+}   
 .conteiner{
     display: grid;
     grid-auto-flow:column ;
@@ -27,7 +27,14 @@ body{
     background: var(--backGroundMenu) ;
     height: 60px;
     width: 95%;    
-   
+   text-decoration: none;
+}
+.cabecalho a{
+    text-decoration: none;
+    font-family: var(--textPage);
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--colorText);
 }
 #cabecalho{
     background: var(--backGroundMenu) ;
@@ -41,8 +48,8 @@ body{
 #cabecalho a:hover{
     color: #cecece;
 }
-.textCabrcalho{
-    width: 80%;
+#textCabecalho{
+    width: 100%;
     color:var(--colorText);
     font-size: 16px;
     font-weight: 400;
@@ -60,7 +67,6 @@ body{
     height:40px ; 
     padding: 0;
 }
-
 #Buttons{
     background-color: var(--colorFooterAndBackBotton);
     margin-bottom: 15px;
@@ -81,6 +87,7 @@ body{
     width:100%
 }
 #cabecalhoInfo{
+    width: 100%;
     text-align: center;
     color: var(--colorText);
 }
@@ -88,9 +95,12 @@ body{
     font-family: var(--textPage);
     font-size: 60px;
     font-weight: 800;
-    margin-top: 95px;
+    margin-top: 60px;
+    width: 100%;
 }
 #cabecalhoInfo h2{
+    width: 100%;
+    line-height: 40px;
     font-family: var(--textPage);
     font-weight: 500;
     font-size: 30px;
@@ -100,27 +110,20 @@ body{
     border-radius: 8px;
     background-color: #000000;
 }   
-
-
 .formsPag{
+    width: 100%;
+    margin-top: 10%;
+    padding-top: 180px;
   margin-left: 405px;
    
 }
 .infoForms h2{
     font-family: var(--textPage);   
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: 600;
+    font-size: 20px;
     margin-bottom: 5px;
     color: var(--colorText);
-}
-
-
-.labelForms {
-    font-size: 22px;
-    font-family: var(--textPage);
-    font-weight: 600;
-    width: 40%;
-    margin-bottom: 0;
+    width: 100%;
 }
 .input{
     border: 1px solid ;
@@ -133,9 +136,9 @@ body{
     display: inline-block;
     margin-right:15px;
     margin-bottom: 2px;
-    font-weight: 400;
+    font-weight: 600;
     font-family: var(--textPage);
-    font-size: 15px;
+    font-size: 18px;
     color: var(--colorText);
     
 }
@@ -150,10 +153,9 @@ body{
     font-size: 15px;
     background-color: var(--colorFooterAndBackBotton);
     color: var(--colorText);
+    box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25); ;
+    cursor: pointer;
 
-}
-.formsPag{
-    margin-top: 80px;
 }
 #cursosDnc{
     color: var(--colorText);
@@ -198,4 +200,104 @@ body{
 }
 #back{
     background-color: var(--colorFooterAndBackBotton);
+}
+@media only screen and (max-width: 600px){
+    
+    .cabecalho{
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+        padding: 0;
+        margin:0 ;
+        width: 100%;
+    }
+    .cabecalho a{
+        height: 15%;
+        margin-top: 1%;
+    }
+    #cabecalho{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        
+    }
+    .cabecalho #reec{
+        width: 100%;
+        text-align: center;
+    }
+   .cabecalhoBotton{
+    width: 56.4%;
+    align-items: center;
+    margin-top: 2%;
+    margin-right: 1px;
+   }
+   #cabecalhoInfo{
+    height: 100%;
+   }
+   #cabecalhoInfo h1{
+    font-size: 45px;
+    margin-top: 15%;
+   }
+   #cabecalhoInfo h2{
+    font-size: 24px;
+    line-height: 35px;
+    margin: 0.5%;
+   }
+   #textCabecalho{
+    height: 100%;
+    margin: 1% 0  0 0  ;
+   }
+   #formsPag{
+    margin-top: 15px;
+    padding: 20px;
+   }
+   .formsPag{
+    margin-top: 15px;
+    padding-top: 20px;
+    margin: 2%;
+    padding: 2%;
+   }
+   .infoForms h2{
+    font-size: 18px;
+   }
+   .input{
+    width: 90%;
+   }
+   .infoForms h3{
+    font-size: 14px;
+    margin-right: 2%;
+   }
+   .formsPag button{
+    margin-left: 7%;
+    width: 80%;
+    align-items: center;
+   }
+   #back{
+    flex-direction: column;
+   }
+   #cursosDnc{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    
+   }
+   #cursosDnc li {
+    font-size: 10px;
+    height: 10%;
+
+   }
+   #cursosDnc ul{
+    font-size: 10px;
+    width: 100%;
+    line-height: 20px;
+    padding: 0;
+    margin: 0;
+   }
+   #infosDnc h3{
+    font-size: 15px;
+    margin-top: 5%;
+   }
+    
+   
 }
